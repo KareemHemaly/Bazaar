@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewData["Title"] = "Order";
+}
+<link rel="stylesheet" href="~/css/OrderStyle/OrderPage.css"/>
+<script></script>
+<h1 id="title">Make an Order</h1>
+
+<div>
+    <form>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <label>Seller Name</label>
+                        <select class="form-control">
+                            <option>--select Name--</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <label>The currency</label>
+                        <select class="form-control">
+                            <option>--select currency--</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label>product</label>
+                    <select class="form-control">
+                        <option>--select Product--</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="form-group">
+                    <label>Count</label>
+                    <input class="form-control" placeholder="count" type="number">
+                </div>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <input type="button" class="btn btn-primary" value="Add">
+            <input type="button" class="btn btn-secondary" value="Choose Product">
+        </div>
+        <div class="form-group">
+            <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>amdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>afat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>atwitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>amdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>afat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>atwitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br />
+            <h5 readonly type="text"  id="totalPrice">Total Price: 0</h5>
+        </div>
+        <div class="form-group">
+            <input type="button" class="btn btn-success" value="Print">
+        </div>
+    </form>
+</div>
+
+
+
